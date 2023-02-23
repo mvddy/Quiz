@@ -1,0 +1,109 @@
+*, * ::before, *::after {
+    box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body{
+font-size: 2rem;
+color: black;
+padding: 0;
+margin: 0;
+display: flex;
+width: 100vw;
+height: 100vh;
+text-align: center;
+justify-content: center;
+align-items: center;
+background-color: hsl(var(--hue), 100%, 20%);
+}
+
+
+body.correct {
+    color: rgb(42, 165, 48);
+}
+
+body.wrong {
+    color: brown;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(143, 107, 107);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn{
+    font-size: 2rem;
+    color: black;
+    border: 1px solid hsl(color, 100%, 30%);
+    background-color: wheat;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(147, 126, 126);
+    outline: none;
+}
+
+.btn:hover{
+    border-color: black;
+}
+
+.btn-correct {
+    color: brown;
+    color: black;
+}
+
+.btn-wrong {
+    color: brown;
+}
+
+.start-btn, .next-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.score-btn{
+    background-color: coral;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.titlecontainer{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 10px;
+}
+
+#time{
+    color: red;
+    justify-content: left;
+    text-align: left;
+}
